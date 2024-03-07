@@ -10,11 +10,16 @@ It is recommended to use Docker to build the example projects. You will need to 
 
 ```bash
 DOCKER_BUILDKIT=1 docker build -f examples/angular12-toh/Dockerfile . \
+    -t nr-browser-example \
     --build-arg="NR_USER_KEY=<new_relic_user_api_key>" \
     --build-arg="NR_BROWSER_APP_GUID=<browser_entity_guid>"
 ```
 
-Replace the target `Dockerfile` with the example project you want to build and the build arguments with correct values for your New Relic account. Review [browser_agent.env](./browser_agent.env) for additional build arguments that can be provided.
+Replace the target `Dockerfile` with the example project you want to build and the build arguments with correct values for your New Relic account. Review [browser_agent.env](./browser_agent.env) for additional build arguments that can be provided. You can use the below command to run the image.
+
+```bash
+docker run -it --rm -p 8080:80 nr-browser-example
+```
 
 If you do not have or want to use Docker, each example project can be built locally. You will need to modify the project to place the correct agent snippet which can be difference depending on the example. Review each examples Dockerfile for more information on how to do this.
 
