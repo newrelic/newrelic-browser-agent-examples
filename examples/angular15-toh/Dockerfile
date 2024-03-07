@@ -1,9 +1,9 @@
-FROM node:16-bookworm AS builder
+FROM node:20-bookworm AS builder
 
 WORKDIR /usr/local/app
 
-COPY examples/angular12-toh/*.json /usr/local/app/
-COPY examples/angular12-toh/src /usr/local/app/src
+COPY examples/angular15-toh/*.json /usr/local/app/
+COPY examples/angular15-toh/src /usr/local/app/src
 RUN npm install
 
 ARG NR_BROWSER_APP_GUID
@@ -28,6 +28,6 @@ RUN npm run build
 FROM nginx:1.25.4-bookworm
 
 COPY --from=builder /usr/local/app/dist/ /usr/share/nginx/html/
-COPY examples/angular12-toh/angular-nginx.conf /etc/nginx/conf.d/default.conf
+COPY examples/angular15-toh/angular-nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80

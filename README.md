@@ -11,6 +11,7 @@ It is recommended to use Docker to build the example projects. You will need to 
 ```bash
 DOCKER_BUILDKIT=1 docker build -f examples/angular12-toh/Dockerfile . \
     -t nr-browser-example \
+    --no-cache \
     --build-arg="NR_USER_KEY=<new_relic_user_api_key>" \
     --build-arg="NR_BROWSER_APP_GUID=<browser_entity_guid>"
 ```
