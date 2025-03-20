@@ -25,12 +25,12 @@
     "lint": "eslint --ext .vue,.js,.ts --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.4.2",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@types/node": "^18.16.0",
-    "eslint": "^8.39.0",
-    "nuxt": "^3.4.2",
-    "postcss-nesting": "^11.2.2",
-    "typescript": "^5.0.4"
+    "@nuxt/devtools": "^2.3.1",
+    "@nuxt/eslint-config": "^1.2.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "nuxt": "^3.16.1",
+    "postcss-nesting": "^13.0.1",
+    "typescript": "^5.8.2"
   }
 }
