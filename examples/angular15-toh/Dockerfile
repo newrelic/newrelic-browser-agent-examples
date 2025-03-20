@@ -25,7 +25,7 @@ RUN /bin/bash -c ''' \
 
 RUN npm run build
 
-FROM nginx:1.25.4-bookworm
+FROM nginx:1.27.4-bookworm
 
 COPY --from=builder /usr/local/app/dist/ /usr/share/nginx/html/
 COPY examples/angular15-toh/angular-nginx.conf /etc/nginx/conf.d/default.conf
