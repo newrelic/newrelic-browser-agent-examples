@@ -1,4 +1,4 @@
-# Angular 13 Tour of Heroes
+# Angular 15 Tour of Heroes
 
 This is a reproduction / copy of the [Angular Tour of Heroes tutorial](https://v15.angular.io/tutorial/tour-of-heroes) that includes the New Relic Browser Agent. The original tutorial code is included [here](./toh-pt6.zip) for reference.
 
