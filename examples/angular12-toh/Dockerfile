@@ -21,7 +21,6 @@ RUN /bin/bash -c ''' \
     JS_PLACEHOLDER="<\!-- BROWSER_AGENT_JS_SNIPPET -->" && \
     HTML_CONTENTS=$(cat /usr/local/app/src/index.html) && \
     echo "${HTML_CONTENTS/$JS_PLACEHOLDER/"$JS_LOADER_SNIPPET"}" > /usr/local/app/src/index.html \
-    && cat /usr/local/app/src/index.html \
 '''
 
 RUN npm run build
@@ -29,5 +28,6 @@ RUN npm run build
 FROM nginx:1.25.4-bookworm
 
 COPY --from=builder /usr/local/app/dist/ /usr/share/nginx/html/
+COPY examples/angular12-toh/angular-nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
