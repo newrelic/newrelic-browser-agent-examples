@@ -28,7 +28,7 @@ const ClientComponent: React.FC = () => {
 		createNewrelicBrowserAgent(configs)
 	})
 
-  return <div>Client-side component loaded</div>;
+  return <></>;
 };
 
 export default ClientComponent;
