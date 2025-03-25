@@ -9,11 +9,16 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['<your APM app name>'],
+  app_name: ['<YOUR_APP_NAME>'],
   /**
    * Your New Relic license key.
    */
-  license_key: '<your APM ingest license key>',
+  license_key: 'YOUR_APM_INGEST_LICENSE_KEY',
+  // uncomment the following to enable browser monitoring
+  // browser_monitoring: {
+  //   enable: true,
+  //   debug: true
+  // },
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
