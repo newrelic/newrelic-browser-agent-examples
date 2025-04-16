@@ -22,7 +22,7 @@ Replace the target `Dockerfile` with the example project you want to build and t
 docker run -it --rm -p 8080:80 nr-browser-example
 ```
 
-If you do not have or want to use Docker, each example project can be built locally. You will need to modify the project to place the correct agent snippet which can be difference depending on the example. Review each examples Dockerfile for more information on how to do this.
+If you do not have or want to use Docker, each example project can be built locally. You will need to modify the project to place the correct agent snippet which can be different depending on the example. Review each examples Dockerfile for more information on how to do this.
 
 ## Support
 
@@ -32,7 +32,7 @@ New Relic hosts and moderates an online forum where you can interact with New Re
 
 ## Contribute
 
-We encourage your contributions to improve [project name]! Keep in mind that when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
+We encourage your contributions to improve the New Relic Browser Agent examples! Keep in mind that when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
 
 If you have any questions, or to execute our corporate CLA (which is required if your contribution is on behalf of a company), drop us an email at opensource@newrelic.com.
 
@@ -44,8 +44,7 @@ If you believe you have found a security vulnerability in this project or any of
 
 If you would like to contribute to this project, review [these guidelines](./CONTRIBUTING.md).
 
-To all contributors, we thank you!  Without your contribution, this project would not be what it is today.  We also host a community project page dedicated to [Project Name](<LINK TO https://opensource.newrelic.com/projects/... PAGE>).
+To all contributors, we thank you!  Without your contribution, this project would not be what it is today.
 
 ## License
-[Project Name] is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
->[If applicable: The [project name] also uses source code from third-party libraries. You can find full details on which libraries are used and the terms under which they are licensed in the third-party notices document.]
+New Relic Browser Agent examples is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
